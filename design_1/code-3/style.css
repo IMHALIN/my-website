@@ -1,0 +1,242 @@
+/* ========================================
+   1. RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #f3f3f3;
+  color: #171717;
+  font-family: Arial, sans-serif;
+}
+
+/* ========================================
+   2. PAGE
+======================================== */
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 40px 20px;
+}
+
+/* ========================================
+   3. FRAME 30 : POSTER
+======================================== */
+
+.poster {
+  width: 100%;
+  max-width: 375px;
+
+  aspect-ratio: 375 / 812;
+
+  container-type: size;
+
+  background: #fffef1;
+
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+
+  grid-template-rows:
+    15%
+    37%
+    34%
+    14%;
+}
+
+/* ========================================
+   4. FRAME 24 : HEADER
+======================================== */
+
+.poster-header {
+  grid-row: 1;
+
+  width: 100%;
+  height: 100%;
+
+  padding-left: 6%;
+  padding-top: 6%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-group {
+  width: 100%;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 200;
+
+  line-height: 0.85;
+}
+
+.title-gill {
+  font-size: 15cqw;
+}
+
+.title-sans {
+  font-size: 15cqw;
+
+  margin-left: 23%;
+  margin-top: 1%;
+}
+
+.artist-info {
+  font-size: 4cqw;
+
+  margin-top: 5%;
+  font-family: Arial, sans-serif;
+}
+
+/* ========================================
+   5. FRAME 26 + 27 : CIRCLES
+======================================== */
+
+.circle-stage {
+  grid-row: 2;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+
+  width: 50%;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+}
+
+.circle-mint {
+  background: #d1eee5;
+
+  left: 15%;
+  top: 35%;
+}
+
+.circle-peach {
+  background: #ffe5d8;
+
+  left: 38%;
+  top: 0;
+}
+
+/* ========================================
+   6. FRAME 28 : DESCRIPTION
+======================================== */
+
+.content-area {
+  grid-row: 3;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding-top: 20%;
+  padding-right: 4%;
+}
+
+.description {
+  width: 27%;
+
+  font-family: Arial, sans-serif;
+  font-size: 3cqw;
+  line-height: 1.35;
+
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.description {
+  width: 37%;
+
+  font-family: Arial, sans-serif;
+
+  font-size: qw;
+  line-height: 1.35;
+
+  text-align: left;
+
+  overflow-wrap: break-word;
+}
+
+/* ========================================
+   7. FRAME 29 : BOTTOM INFO
+======================================== */
+
+.bottom-info {
+  grid-row: 4;
+
+  width: 100%;
+  height: 100%;
+
+  padding-left: 3%;
+  padding-bottom: 3%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  gap: 5%;
+}
+
+.typeface-name {
+  font-size: 0cqw;
+  line-height: 1.3;
+}
+
+.footer-info {
+  font-size: 2cqw;
+  line-height: 1.4;
+}
+
+/* ========================================
+   8. RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .page {
+    padding: 24px 16px;
+  }
+
+  .poster {
+    width: 100%;
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 12px;
+  }
+
+  .poster {
+    width: 100%;
+  }
+}

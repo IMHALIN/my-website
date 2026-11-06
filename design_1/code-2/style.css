@@ -1,0 +1,176 @@
+/* =====================================
+   1. RESET
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* =====================================
+   2. PAGE
+===================================== */
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+/* =====================================
+   3. POSTER - PARENT FRAME
+===================================== */
+
+.poster {
+  width: 100%;
+  max-width: 768px;
+
+  aspect-ratio: 3 / 4;
+
+  position: relative;
+  container-type: inline-size;
+
+  overflow: hidden;
+
+  background-color: #fffef0;
+}
+
+/* =====================================
+   4. MAIN TITLE
+===================================== */
+
+.title-gill {
+  position: absolute;
+
+  top: 2.5%;
+  left: 4%;
+
+  font-family: "Times New Roman", serif;
+  font-size: 14.5cqw;
+  line-height: 0.8;
+
+  color: #050505;
+}
+
+.title-sans {
+  position: absolute;
+
+  top: 7.5%;
+  left: 26%;
+
+  font-family: "Times New Roman", serif;
+  font-size: 13.5cqw;
+  line-height: 0.8;
+
+  color: #050505;
+}
+
+/* =====================================
+   5. SUBTITLE
+===================================== */
+
+.subtitle {
+  position: absolute;
+
+  top: 27.5%;
+  left: 4%;
+
+  font-family: "Gill Sans", "Arial", sans-serif;
+  font-size: 3.5cqw;
+
+  color: #111;
+}
+
+/* =====================================
+   6. CIRCLES
+===================================== */
+
+.circle {
+  position: absolute;
+
+  width: 42.5%;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+}
+
+/* Peach Circle */
+
+.circle-peach {
+  top: 16%;
+  left: 47.5%;
+
+  background-color: #ffe5d8;
+}
+
+/* Mint Circle */
+
+.circle-mint {
+  top: 35.5%;
+  left: 19%;
+
+  background-color: #cef0e5;
+}
+
+/* =====================================
+   7. BOTTOM LEFT INFORMATION
+===================================== */
+
+.poster-info {
+  position: absolute;
+
+  left: 4%;
+  bottom: 3.5%;
+
+  width: 32%;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.5cqw;
+  line-height: 1.5;
+
+  color: #222;
+}
+
+/* =====================================
+   8. DESCRIPTION
+===================================== */
+
+.description {
+  position: absolute;
+
+  left: 41%;
+  bottom: 3.5%;
+
+  width: 54%;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.5cqw;
+  line-height: 1.35;
+
+  color: #222;
+}
+
+.description p + p {
+  margin-top: 1.2em;
+}
+
+/* =====================================
+   9. RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+  .page {
+    padding: 20px 12px;
+  }
+}
